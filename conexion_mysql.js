@@ -1,4 +1,4 @@
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const express = require('express');
 const app = express();
 //const port=3001;
@@ -6,6 +6,7 @@ const cors= require('cors');
 const bcrypt = require('bcrypt');
 require('dotenv').config();
 const port =process.env.MYSQLPORT;
+
 const connection = mysql.createConnection({
   host: process.env.MYSQLHOST,
   user: process.env.MYSQLUSER,

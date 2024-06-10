@@ -256,7 +256,7 @@ app.get("/Usuarios",(req,res)=>{
 );
 });
 
-/*
+
 connection.connect((err) => {
   if (err) {
     console.error('Error de conexión a la base de datos:', err);
@@ -268,7 +268,7 @@ connection.connect((err) => {
 
 
 
-*/
+
   app.listen(port, () => {
     console.log(`Servidor corriendo en http://localhost:${port}`);
   });
